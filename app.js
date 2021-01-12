@@ -4,6 +4,8 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
 
+const patient = require('./api/patient');
+
 const app = express();
 
 
@@ -11,7 +13,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(cors());
+app.use(cors())
 
 app.get('/', (req, res) => {
     res.json({
@@ -19,6 +21,8 @@ app.get('/', (req, res) => {
       patients: ["Patient 1", "Patient 2", "Patient 3", "Patient 4" ]
     })
 });
+
+app.use('/api/v1/patients/', patient);
 
 app.get('/vitals', (req, res) => {
   res.json({
