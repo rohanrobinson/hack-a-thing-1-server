@@ -27,8 +27,8 @@ knex seed:run # add sample data to db
 npm run dev
 ```
 
-# Created for COSC 98.01, Winter Term 2021
+## Based off of inspiration for Coding Garden Youtube tutorial, https://www.youtube.com/watch?v=aql62xliRzE
+## Created for COSC 98.01, Winter Term 2021
 
 ## by Rohan Robinson
-
 
