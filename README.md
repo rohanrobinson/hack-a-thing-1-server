@@ -4,6 +4,11 @@
 ## learned to set up a Express app connected to a Postgres database
 ## provides api to be consumed by client-side found at https://github.com/rohanrobinson/hack-a-thing-1-client
 
+## dummy patient data (name, age, weight, symptoms, gender) stored in postgres database
+## express app has routes to access view all patient data at once, and select and view single patients data
+
+
+
 ## runs on http://localhost:3000/api/v1/patients
 
 ## Pre-requisites
